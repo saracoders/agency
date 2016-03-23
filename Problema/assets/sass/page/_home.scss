@@ -1,0 +1,167 @@
+#hero {
+	display: flex;
+    align-items: center;
+    text-align: center;
+	
+	h3 {
+	font-family: $droid;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+   }
+   h1 {
+   	font-family: $montserrat;
+    text-transform: uppercase;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+   }
+}
+.btn.btn-xl {
+background: $yelowlight;
+font-weight: 700;
+color: white;
+font-size: 25px;
+padding: 15px 25px;
+	&:hover{
+		background:$amarillo;
+	}
+}
+
+#services {
+	span {
+	background: $yelowlight;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 59px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+	}
+}
+
+#portfolio {
+	.portfolio {
+		margin-bottom: 30px;
+		text-align: center;
+		.cont-portfolio {
+			background:white;
+			padding:10px;
+		} 
+	}
+	img {
+		width: 100%;
+	}
+}
+
+#line{
+	position:relative;
+	&:before{
+		top: 0;
+	    bottom: 0;
+	    position: absolute; 
+	    content: "";
+	    width: 2px;
+	    background-color: #f1f1f1;
+	    left: 49%;
+	    margin-left: -1.5px;
+	}
+	.img-about{
+		border-radius: 100%;
+	    border: 5px solid #f4f4f4;
+	    width: 140px;
+	}
+	.circle{
+		height: 140px;
+		background-color: $amarillo;
+		text-align: center;
+		padding-top:40px;
+		span{
+			@include fuente($montserrat,white,1.1em);
+			width: 100%;
+		}
+	}
+
+	h3{
+		margin:0;
+	}
+}
+
+#team {
+	.team {
+
+		text-align: center;
+		h4 {
+		    margin-top: 25px;
+		    margin-bottom: 0;
+		    text-transform: none;
+		}
+		p {
+		    margin-top: 0;
+		}
+		img {
+			margin: 0 auto;
+	    	border: 7px solid white;
+	    	border-radius:50%;
+		}
+	}
+	.parrafo {
+		text-align: center;
+	    width: 80%;
+	    margin: 30px auto 0;
+	}
+}
+.social {
+	a {
+		display: block;
+	    background-color: #222222;
+	    height: 40px;
+	    width: 40px;
+	    border-radius: 50%;
+	    font-size: 20px;
+	    line-height: 40px;
+	    color: white;
+	}
+}
+
+.marca{
+	padding:20px;
+	img {
+		width: 100%;
+		padding:20px;
+	}
+}
+
+#contact {
+	input, textarea {
+		width: 100%;
+		border: none;
+		padding: 15px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+	}
+	textarea{
+		height: 190px;
+	}
+}
+
+footer {
+	.row {
+		display: flex;
+	    align-items: center;
+	    padding: 20px 0;
+	}
+	p {
+		font-weight: 600;
+		margin: 0;
+	}
+	.privacy {
+		a {
+			margin-left: 20px;
+			color:$amarillo;
+		}
+	}
+}

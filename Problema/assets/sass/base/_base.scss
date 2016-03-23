@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+$amarillo:#fec503;
+$yelowlight:#FED136;
+$graylight:#F7F7F7;
+
+$kausha:'Kaushan Script', cursive;
+$droid:'Droid Serif', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+$bg-blacklight : #222222;
+
+@mixin fuente($valor,$color,$size){
+	font-family: $valor;
+	color:$color;
+	font-size:$size;
+}
+
+@mixin montserratstyle{
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing:3px;
+}
+
+h1{
+	margin:0;
+}
+
+body{
+	font-size:14px;
+}
+
+section {
+	padding:100px 0;
+	h2 {
+		font-size: 40px;
+	    margin-top: 0;
+	    margin-bottom: 15px;
+	}
+	p {
+		font-size: 16px;
+	    font-family: $droid;
+	    text-transform: none;
+	    font-style: italic;
+	    font-weight: 400;
+	}
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $montserrat;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.bg-graylight {
+	background :$graylight;
+}
+
+.bg-blacklight {
+	background :$bg-blacklight;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+.cl-white {
+	color: white;
+}

@@ -1,0 +1,40 @@
+.navbar-default{
+	background: rgba(0, 0, 0, 0.58);
+    border-color: transparent;
+}
+
+.nav.navbar-nav.navbar-right{
+	li>a{
+		@include fuente($montserrat, white,.9em);
+		@include montserratstyle;
+			&:hover{
+				color:$amarillo;
+				background-color:transparent;
+			}
+	}
+}
+
+.navbar-brand{
+	padding:10px;
+	h1{
+		@include fuente($kausha,$amarillo,1.6em);
+	}
+}
+
+#hero{
+	background-image: url("../../img/header-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.menu-fixed{
+	position:fixed;
+	z-index:1000;
+	top:0;
+	left: 0;
+	width:100%;
+	box-shadow:0px 1px 1px rgba(0,0,0,.1);
+	background: #3B5998;
+}

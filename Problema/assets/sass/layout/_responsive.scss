@@ -1,0 +1,17 @@
+@media screen and (max-width:768px){
+	.navbar-header{
+		background-color:transparent;
+	}
+	.navbar-collapse{
+		background: rgba(0, 0, 0, 0.58);
+	}
+	#hero {
+		h3 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 55px;	
+		}
+	}
+}
+	
